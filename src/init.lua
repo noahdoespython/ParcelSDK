@@ -1,4 +1,5 @@
 local SDK = {}
+SDK.__index = SDK
 local BASE_URL = "https://api.parcelroblox.com/";
 local fetch = game:GetService('HttpService')
 
@@ -16,7 +17,7 @@ function SDK.CheckProductWhitelist(hubID : string, productID : string, robloxID:
     
 end
 
-function AddUserToWhitelist(hub_secret_key : string, productID : string, robloxID: string)
+function SDK.AddUserToWhitelist(hub_secret_key : string, productID : string, robloxID: string)
     local URL = BASE_URL .. "api/wl/add"
     local header = {
         hub_secret_key = hub_secret_key,
@@ -32,7 +33,7 @@ function AddUserToWhitelist(hub_secret_key : string, productID : string, robloxI
     print(response)
 end
 
-function GetProductsList(hub_secret_key : string)
+function SDK.GetProductsList(hub_secret_key : string)
     local URL = BASE_URL .. "api/hub/getproducts"
     local header = {
         hub_secret_key = hub_secret_key
@@ -42,7 +43,7 @@ function GetProductsList(hub_secret_key : string)
     print(response)
 end
 
-function GetSpecificProducts(robloxID: string, hub_secret_key : string)
+function SDK.GetSpecificProducts(robloxID: string, hub_secret_key : string)
     local URL = BASE_URL .. "api/hub/getproducts/"..robloxID
     local header = {
         hub_secret_key = hub_secret_key
