@@ -10,6 +10,16 @@ The Parcel OpenAPI Wrapper makes it easy for developers to interact with our ROB
 
 With that its now been brought to Luau.
 
+# Install
+
+*with Roblox Marketplace*
+
+https://www.roblox.com/library/9603462189/Parcel
+
+*with GitHub*
+
+
+
 # Usage
 
 First you will need to create a Parcel object
