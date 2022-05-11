@@ -18,7 +18,7 @@ https://www.roblox.com/library/9603462189/Parcel
 
 *with GitHub*
 
-
+https://github.com/noahdoespython/ParcelSDK/releases
 
 # Usage
 
